@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         btn.addEventListener('click', function (e) {
             e.preventDefault();
             const lang = getCurrentLanguage();
-            window.location.href = `workgallery/index.html?lang=${lang}`;
+            window.location.href = `workgallery?lang=${lang}`;
         });
     }
 });
