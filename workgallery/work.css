@@ -1,0 +1,267 @@
+.modal {
+  display: block;
+  animation: modalFadeIn 0.3s ease-in;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(70deg, #212121 0%, #1e1e36 50%, #1e2f5c 100%);
+  backdrop-filter: blur(10px);
+  z-index: 2000;
+  overflow-y: auto;
+}
+
+@keyframes modalFadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+.modal-content {
+max-width: 1200px;
+margin: 2rem auto;
+padding: 2rem;
+position: relative;
+}
+
+.modal-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 3rem;
+}
+
+.modal-title {
+font-size: 2.5rem;
+font-weight: 700;
+background: linear-gradient(45deg, #ffffff, #00f5ff);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.work-category {
+margin-bottom: 4rem;
+}
+
+.category-title {
+font-size: 1.8rem;
+font-weight: 600;
+margin-bottom: 1.5rem;
+color: #00f5ff;
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.category-icon {
+font-size: 1.5rem;
+}
+
+.work-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+gap: 1.5rem;
+}
+
+.work-item {
+background: rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(15px);
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 15px;
+padding: 1.5rem;
+transition: all 0.3s ease;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+}
+
+.work-item::before {
+content: '';
+position: absolute;
+top: 0;
+left: -100%;
+width: 100%;
+height: 100%;
+background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+transition: left 0.5s ease;
+}
+
+.work-item:hover::before {
+left: 100%;
+}
+
+.work-item:hover {
+transform: translateY(-5px);
+background: rgba(255, 255, 255, 0.1);
+border-color: rgba(0, 245, 255, 0.3);
+box-shadow: 0 10px 30px rgba(0, 245, 255, 0.2);
+}
+
+.work-item-header {
+display: flex;
+align-items: center;
+gap: 1rem;
+margin-bottom: 1rem;
+}
+
+.work-icon {
+width: 50px;
+height: 50px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+flex-shrink: 0;
+}
+
+.work-icon.video {
+background: linear-gradient(45deg, #ff4757, #ff6b7a);
+}
+
+.work-icon.python {
+background: linear-gradient(45deg, #3742fa, #5352ed);
+}
+
+.work-icon.ai {
+background: linear-gradient(45deg, #2ed573, #7bed9f);
+}
+
+.work-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+
+.work-type {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.work-description {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.work-title.video {
+  color: #ff4757;
+}
+
+.work-type.video {
+  color: #ff4757;
+}
+
+.work-description.video {
+  color: #aa2530;
+}
+
+.work-title.python {
+  color: #3742fa;
+}
+
+.work-type.python {
+  color: #3742fa;
+}
+
+.work-description.python {
+  color: #2028af;
+}
+
+.work-title.ai {
+  color: #2ed573;
+}
+
+.work-type.ai {
+  color: #2ed573;
+}
+
+.work-description.ai {
+  color: #209350;
+}
+
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.work-tag {
+  background: rgba(0, 245, 255, 0.15);
+  color: #00f5ff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(0, 245, 255, 0.2);
+}
+
+.work-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.work-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.work-btn.primary {
+  background: linear-gradient(45deg, #00f5ff, #0066ff);
+  color: white;
+}
+
+.work-btn.secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.work-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.work-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  font-weight: 350;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modal-content {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .modal-title {
+    font-size: 2rem;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-actions {
+    flex-direction: column;
+  }
+}
