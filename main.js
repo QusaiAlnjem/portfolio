@@ -34,14 +34,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-const workBtn = document.getElementById('workGalleryBtn');
-if (workBtn) {
-    workBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        const lang = getCurrentLanguage();
-        window.location.href = `workgallery/work-gallery.html?lang=${lang}`;
-    });
-}
+['workGalleryBtn', 'workGalleryBtn2'].forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) {
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            const lang = getCurrentLanguage();
+            window.location.href = `workgallery/work-gallery.html?lang=${lang}`;
+        });
+    }
+});
 // Helper function to fetch and apply translations
 function setLanguage(lang) {
     fetch(`languages/${lang}.json`)
