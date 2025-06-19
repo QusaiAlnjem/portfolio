@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page-title">Qusai Alnjem - AI Engineer & Content Creator</title>
+    <link rel="stylesheet" type="text/css" href="Styles/main.css">
+    <link rel="stylesheet" type="text/css" href="Styles/background.css">
+    <link rel="stylesheet" type="text/css" href="Styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="Styles/hero.css">
+    <link rel="stylesheet" type="text/css" href="Styles/about.css">
+    <link rel="stylesheet" type="text/css" href="Styles/projects.css">
+    <link rel="stylesheet" type="text/css" href="Styles/channel.css">
+    <link rel="stylesheet" type="text/css" href="Styles/contact.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div data-i18n="logo" class="logo">Qusai Alnjem</div>
+                <ul class="nav-links">
+                    <li><a data-i18n="btn-home" href="#home">Home</a></li>
+                    <li><a data-i18n="btn-about" href="#about">About</a></li>
+                    <li><a data-i18n="btn-projects" href="#projects">Projects</a></li>
+                    <li><a data-i18n="btn-channel" href="#Videos">Channel</a></li>
+                    <li><a data-i18n="btn-contact" href="#contact">Contact</a></li>
+                </ul>
+                <div class="language-switch">
+                    <div class="lang-option active" data-lang="en">
+                        <span>Eng</span>
+                    </div>
+                    <div class="lang-option" data-lang="ar">
+                        <span>عربي</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container" id="main-hero">
+            <div class="hero-content">
+                <h1 data-i18n="title">I'm Qusai</h1>
+                <p data-i18n="subtitle">Computer Engineer | AI Specialist | Content Creator</p>
+                <a id="workGalleryBtn" data-i18n="work-gallery" href="#" class="cta-button">View My Work</a>
+            </div>
+        </div>
+        <div>
+            <img class="hero-img" src="images\output-onlinegiftools.gif">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 data-i18n="aboutme" class="section-title fade-in">About Me</h2>
+            <div class="about-content">
+                <div class="about-images">
+                    <img class="about-image primary" src="images\Untitled-1.jpg">
+                    <img class="about-image floating" src="images\channels4_profile.jpg">
+                </div>
+                <div class="about-text fade-in">
+                    <p data-i18n="p1">My name is Qusai, I am studying computer engineering at ASOIU in Azerbaijan, I have a comprehensive knowledge in Python and SQL programming languages, and I applied many projects in them.</p>
+                    <p data-i18n="p2">My major focus is in Machine Learning and Deep Learning in AI, I have created numerous projects in this field especially in image processing and object detection, and I was able to learn and gain an experience in building AI models, simple ones, and complex ones. </p>
+                    <p data-i18n="p3">I create YouTube videos about programming and technology, I explained a lot of topics in a unique style and reached tens and hundreds thousands of viewers and subscribers, I have created courses as well that teaches Pyhton & SQL.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 data-i18n="my-projects" class="section-title fade-in">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <img class="project-image" src="images\Screenshot 2025-06-14 221952.png">
+                    <div class="project-content">
+                        <h3 data-i18n="image-deblurrer-title" class="project-title">Image Deblurrer</h3>
+                        <p data-i18n="image-deblurrer-desc" class="project-description">An intelligent model that takes blur image, it reduces the blur, and enhances the colors saturation.</p>
+                        <div class="project-tags">
+                            <span class="tag">Autoencoders</span>
+                            <span class="tag">Data Pipeline</span>
+                            <span class="tag">VGG16</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <img class="project-image" src="images\Screenshot 2025-06-14 222132.png">
+                    <div class="project-content">
+                        <h3 data-i18n="liver-tumour-title" class="project-title">Liver Cancer Tumour Detector</h3>
+                        <p data-i18n="liver-tumour-desc" class="project-description">A high performance model that uses image segmentation to create meaningful regions in the image. It focuses on enhancing the representation and detecting the liver tumour.</p>
+                        <div class="project-tags">
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">NiBabel</span>
+                            <span class="tag">FastAi</span>
+                            <span class="tag">PSO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <img class="project-image" src="images\Screenshot 2025-06-14 222625.png">
+                    <div class="project-content">
+                        <h3 data-i18n="cat-dog-title" class="project-title">Cat-Dog Classifier</h3>
+                        <p data-i18n="cat-dog-desc" class="project-description">Classic deep learning model that accurately distinguishes between cats and dogs using convolutional neural networks.</p>
+                        <div class="project-tags">
+                            <span class="tag">CNNs</span>
+                            <span class="tag">images processing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-works-section fade-in" style="text-align:center; margin-top: 40px;">
+            <p data-i18n="to-know-more" style="font-size:1.2em; margin-bottom: 20px;">To know more about my works:</p>
+            <div style="display:inline-block; position:relative;">
+                <a data-i18n="work-gallery" href="workgallery-page\work-gallery.html" class="cta-button" style="padding-right: 40px;">View My Work Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="Videos">
+        <div class="container">
+            <div class="section-title fade-in">
+                <img class="char2" src="images\Character2.png">
+                <img class="youtube-logo" src="images\YouTube.png">
+                <img class="char3" src="images\Character3.png">
+                <h2 data-i18n="best-videos" class="section-title">Best Videos</h2>
+            </div>
+            <div class="videos-grid">
+                <a href="https://youtu.be/wil6oMUc-Bs?si=1r6xAwZgCjps-cw7" target="_blank" class="video-card fade-in">
+                    <img class="video-image" src="images\هندسة الحاسب في ماينكرافت.jpg">
+                    <div class="project-content">
+                        <h3 data-i18n="video1-title" class="project-title">Explaining Computer Engineering in Minecraft</h3>
+                        <p data-i18n="video1-desc" class="project-description">I connected between Minecraft's electricity concept and the real life electricity and how computers work in games and real life.</p>
+                    </div>
+                </a>
+                <a href="https://youtu.be/Q6kxI17fKkY?si=qT7RnvaGZQEJvVD8" target="_blank" class="video-card fade-in">
+                    <img class="video-image" src="images\من أفضل.jpg">
+                    <div class="project-content">
+                        <h3 data-i18n="video2-title" class="project-title">1 Project in 7 Different Languages</h3>
+                        <p data-i18n="video3-desc" class="project-description">I tried to build 1 project in 7 different programming languages and compare to see who is the best language.</p>
+                    </div>
+                </a>
+                <a href="https://youtu.be/534slzFXb2U?si=B2nCMnAq5YX848Nu" target="_blank" class="video-card fade-in">
+                    <img class="video-image" src="images\شرح العاب الاونلاين.jpg">
+                    <div class="project-content">
+                        <h3 data-i18n="video3-title" class="project-title">How Online Games Work?</h3>
+                        <p data-i18n="video3-desc" class="project-description">I explained several concepts in networking and how the online games really work, and I answered a question that says: are all online games pay2win?</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="channel-card fade-in">
+            <div class="img-layout">
+                <img src="images/channels4_profile.jpg" alt="YouTube Channel">
+            </div>
+            <div class="stats-layout">
+                <h3 class="channel-name">Impostor | امبوستر</h3>
+                <div class="stats">
+                    <div>
+                        <span class="stats-num">15K+</span>
+                        <div data-i18n="subscribers" class="stats-header">Subscribers</div>
+                    </div>
+                    <div>
+                        <span class="stats-num">380K+</span>
+                        <div data-i18n="total-views" class="stats-header">Total Views</div>
+                    </div>
+                    <div>
+                        <span class="stats-num">65+</span>
+                        <div data-i18n="videos" class="stats-header">Videos</div>
+                    </div>
+                </div>
+                <a data-i18n="visit-channel" href="https://youtube.com/@q.us1" target="_blank" class="cta-button channel">Visit Channel</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 data-i18n="lets-connect" class="section-title fade-in">Let's Connect</h2>
+            <div class="contact-content fade-in">
+                <p data-i18n="interested?">Interested in working with me? I'd love to hear from you!</p>
+                <div class="contact-links">
+                    <a href="https://github.com/QusaiAlnjem" target="_blank" class="contact-link Git">
+                        <img src="images\github.png"> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/qusaialnjem" target="_blank" class="contact-link Lin">
+                        <img src="images\linkedin.png"> LinkedIn
+                    </a>
+                    <a href="mailto:alnjemforbusiness@gmail.com" target="_blank" class="contact-link Eam">
+                        <img src="images\communication.png"> Gmail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="main.js"></script>
+</body>
+</html>

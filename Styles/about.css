@@ -1,0 +1,112 @@
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-images {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.about-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.about-image.primary {
+  background: linear-gradient(45deg, #00f5ff, #ff00ff);
+  position: relative;
+  z-index: 1;
+  animation: floatImage 3s ease-in-out infinite;
+}
+
+.about-image.floating {
+  background: linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1);
+  position: absolute;
+  top: -100px;
+  right: -80px;
+  width: 200px;
+  height: 200px;
+  font-size: 2.5rem;
+  z-index: 2;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+    box-shadow: 0 15px 25px rgba(255, 107, 107, 0.3);
+  }
+  50% { 
+    transform: translateY(-15px) rotate(3deg); 
+    box-shadow: 0 25px 35px rgba(255, 107, 107, 0.5);
+  }
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .about-images {
+    width: 180px;
+    height: 180px;
+  }
+  .about-image,
+  .about-image.primary {
+    width: 180px;
+    height: 180px;
+    font-size: 2.5rem;
+  }
+  .about-image.floating {
+    width: 120px;
+    height: 120px;
+    font-size: 1.5rem;
+    top: -60px;
+    right: -40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-content {
+    gap: 1.2rem;
+  }
+  .about-images {
+    width: 140px;
+    height: 140px;
+  }
+  .about-image,
+  .about-image.primary {
+    width: 140px;
+    height: 140px;
+    font-size: 1.2rem;
+  }
+  .about-image.floating {
+    width: 80px;
+    height: 80px;
+    font-size: 0.9rem;
+    top: -30px;
+    right: -20px;
+  }
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
