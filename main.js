@@ -39,7 +39,7 @@ if (workBtn) {
     workBtn.addEventListener('click', function (e) {
         e.preventDefault();
         const lang = getCurrentLanguage();
-        window.location.href = `workgallery-page/work-gallery.html?lang=${lang}`;
+        window.location.href = `workgallery/work-gallery.html?lang=${lang}`;
     });
 }
 // Helper function to fetch and apply translations
