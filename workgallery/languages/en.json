@@ -84,8 +84,10 @@
   "tag-text-classification": "Text Classification",
   "accuracy-99": "🎯 99% Accuracy",
   "email-security": "📧 Email Security",
-  "en-es-translator-title": "Sentiment Analysis",
-  "en-es-translator-desc": "NLP model that predicts the sentiment of an aspect in a sentence whether it's positive or negative.",
+  "absa-model-title": "Sentiment Analysis",
+  "absa-model-desc": "NLP model that predicts the sentiment of an aspect in a sentence whether it's positive or negative.",
   "tag-nlp": "NLP",
-  "tag-translation": "Aspect-Based Sentiment Analysis",
+  "tag-absa": "Aspect-Based Sentiment Analysis",
+  "accuracy-97" : "🎯 97% Accuracy",
+  "text-analysis" : "🅰️ Text Analysis",
 }
