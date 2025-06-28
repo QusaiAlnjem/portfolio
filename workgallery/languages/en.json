@@ -84,10 +84,8 @@
   "tag-text-classification": "Text Classification",
   "accuracy-99": "🎯 99% Accuracy",
   "email-security": "📧 Email Security",
-  "en-es-translator-title": "English-Spanish Translator",
-  "en-es-translator-desc": "Neural machine translation model that provides accurate English to Spanish translations with contextual understanding.",
+  "en-es-translator-title": "Sentiment Analysis",
+  "en-es-translator-desc": "NLP model that predicts the sentiment of an aspect in a sentence whether it's positive or negative.",
   "tag-nlp": "NLP",
-  "tag-translation": "Translation",
-  "tag-transformer": "Transformer",
-  "not-finished": "⏲️ Not Finished Yet"
+  "tag-translation": "Aspect-Based Sentiment Analysis",
 }
